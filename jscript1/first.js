@@ -1,29 +1,12 @@
-let inp=document.querySelector("input");
-let btn=document.querySelector("button");
-let lis=document.querySelector("li");
-let ul=document.querySelector("ul");
+console.log("hello world");
 
-btn.addEventListener("click",function(){
-    let item=document.createElement("li");
-    item.innerText=inp.value;
-    ul.appendChild(item);
-    console.log(inp.value);
+let str="Hello My name is Abhishek Verma";
+console.log(str.length);
+console.log(str[10]);
+console.log(str[9]);
+console.log(str[3]);
+console.log(str[4]);
+console.log(str[17]);
+// console.log(process.argv);
 
-    let del=document.createElement("button");
-    del.classList.add("button");
-    del.innerText="Delete";
-    item.appendChild(del);
-
-});
-ul.addEventListener("click" , function(){
-    console.log("Element clicked");
-    
-})
-
-// let delBtns=document.querySelectorAll(".delete");
-// for(debtn of delBtns){
-// debtn.addEventListener("click",function(){
-//     let par=this.parentNode;
-//     par.remove();
-// })
-// }
+require("./math");
